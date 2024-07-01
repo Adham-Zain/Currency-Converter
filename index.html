@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+    <nav>
+        
+        <a href="#"class="logo">Currency Exchange</a>
+        <div class="nav-links">
+            <a href="#compare">Compare Currencies</a>
+            <a href="#converter">Currency Converter</a>
+            <a href="#rates">Currency Rates</a>
+        </div>
+        <div class="menu-icon">&#9776;</div>
+    </nav>
+
+    <!-- Main section -->
+    <section id="main" class="main">
+        <div class="content">
+            <h1>Hello, My name is <span class="name">Adham Zain</span></h1>
+            <p id="firstPara"></p>
+            <br>
+            <p id="secondPara"></p>
+        </div>
+    </section>
+
+    <!-- Compare section -->
+    <section id="compare" class="section full-screen">
+        <div class="content">
+            <h2>Compare Currencies</h2>
+            <div class="compare-container">
+                <div class="select-currency">
+                    <label for="currencySelect1">Select Currency 1:</label>
+                    <select id="currencySelect1"></select>
+                </div>
+                <button id="switchButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M8 4l-4 4 4 4m8 -4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="select-currency">
+                    <label for="currencySelect2">Select Currency 2:</label>
+                    <select id="currencySelect2"></select>
+                </div>
+            </div>
+            <button id="compareButton">Compare</button>
+            <div id="comparisonResult">0</div>
+        </div>
+    </section>
+
+    <!-- Converter section -->
+    <section id="converter" class="section full-screen">
+        <div class="content">
+            <h2>Currency Converter</h2>
+            <div class="converter-container">
+                <div class="select-currency">
+                    <label for="fromCurrency">From:</label>
+                    <select id="fromCurrency"></select>
+                </div>
+                <button id="switchButtonConverter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M8 4l-4 4 4 4m8 -4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="select-currency">
+                    <label for="toCurrency">To:</label>
+                    <select id="toCurrency"></select>
+                </div>
+                <div class="amount-input">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" min="0" step="any">
+                </div>
+            </div>
+            <button id="convertButton">Convert</button>
+            <div id="conversionResult">0</div>
+        </div>
+    </section>
+
+    <!-- Rates section -->
+    <section id="rates" class="section full-screen">
+        <div class="content">
+            <h2>Currency Rates in All Countries</h2>
+            <input type="text" id="searchInput" placeholder="Search Rate...">
+            <div id="allCountryRates"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="copyright">© 2024 Created by Adham Zain</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
